@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MenuDO - A MenuBar Wrapper for Microsoft ToDo</title>
+     <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+        }
+        webview {
+            flex: 1 1 auto;
+        }
+        </style>
+  </head>
+  <body style="overflow:hidden;">
+  	<div style="width:100%; height:100%">
+    <webview id="webview" preload="injection.js" src="https://todo.microsoft.com" style="position:absolute;width:100%;height:100%;"></webview>
+    </div>
+    <script>
+      // need to have a script tag make webview work even if you don't plan to use it...
+    </script>
+  </body>
+</html>
