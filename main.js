@@ -1,8 +1,8 @@
-var menubar = require('menubar')
+var menubar = require('menubar');
 const electron = require('electron');
 const Menu = electron.Menu;
-const dialog = electron.dialog
-const path = require('path')
+const dialog = electron.dialog;
+const path = require('path');
 
 var mb = menubar({
   width: 400,
@@ -11,9 +11,9 @@ var mb = menubar({
 });
 
 mb.on('ready', function ready () {
-  console.log('app is ready')
+  console.log('app is ready');
 
-  const contextMenu = Menu.buildFromTemplate ([
+ const contextMenu = Menu.buildFromTemplate ([
       {label: 'Info', click: () => { dialog.showMessageBox({
             type: 'info',
             buttons: ['OK'],
@@ -23,7 +23,7 @@ mb.on('ready', function ready () {
         });
 
                                     }},
-      {label: 'Refresh', click: () => {mb.app.reload ();}}                             
+      //{label: 'Refresh', click: () => {mb.app.reload ();}},                             
       {type: 'separator'},
       {label: 'Quit', click: () => {mb.app.quit ();}}
     ])
