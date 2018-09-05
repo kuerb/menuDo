@@ -19,10 +19,11 @@ mb.on('ready', function ready () {
             buttons: ['OK'],
             icon: path.join(__dirname, 'icons', 'todo_dock.png'),
             //title: 'menuDO',
-            message: 'menuDo\n\nA native menubar wrapper for todo.microsoft.com'+'!'
+            message: 'menuDo\n\nA electron menubar wrapper for todo.microsoft.com'+'!'
         });
 
                                     }},
+      {label: 'Refresh', click: () => {mb.app.reload ();}}                             
       {type: 'separator'},
       {label: 'Quit', click: () => {mb.app.quit ();}}
     ])

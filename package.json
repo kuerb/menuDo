@@ -1,9 +1,10 @@
 {
   "name": "menuDo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A wrapper for todo.microsoft.com",
   "dependencies": {
-    "menubar": "^5.2.3"
+    "menubar": "^5.2.3",
+    "npm": "^6.4.1"
   },
   "devDependencies": {
     "electron-packager": "^5.1.0",
